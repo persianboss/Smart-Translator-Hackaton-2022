@@ -1,0 +1,149 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Container",
+      "id": "23fee61e-de10-a910-b107-2da78a512c1b",
+      "padding": "None",
+      "items": [
+        {
+          "type": "TextBlock",
+          "id": "9e4053ec-898b-f66f-74a2-add94ea8ec36",
+          "text": "The original message was translated by Azure Cognitive service ",
+          "wrap": true,
+          "color": "Attention",
+          "size": "ExtraLarge",
+          "weight": "Bolder"
+        },
+        {
+          "type": "ColumnSet",
+          "id": "0278dc80-cf3f-4b4a-7162-a7a83aa150f7",
+          "columns": [
+            {
+              "type": "Column",
+              "id": "1b27429d-a2c5-0246-5678-0d4d29be6e3f",
+              "padding": "None",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "id": "a2ae2253-b101-ca5c-8e06-a11ba6e1129d",
+                  "text": "From",
+                  "wrap": true,
+                  "weight": "Bolder",
+                  "color": "Default"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "id": "FromText",
+              "padding": "None",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "id": "3f81bff6-4d02-93f8-39c9-6d501a087bc2",
+                  "text": "${FromText}",
+                  "wrap": true,
+                  "color": "Accent",
+                  "weight": "Bolder",
+                  "horizontalAlignment": "Left"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "id": "48b7d22f-665e-2023-8192-d51a15d798ff",
+              "padding": "None",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "id": "06d6effc-55c2-9a8a-a372-7070ab7c5cd7",
+                  "text": "To",
+                  "wrap": true,
+                  "weight": "Bolder",
+                  "color": "Default"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "id": "ToText",
+              "padding": "None",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "id": "e55fd12d-dd9b-aa20-bb39-fe65d0b2f92a",
+                  "text": "${ToText}",
+                  "wrap": true,
+                  "weight": "Bolder",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ],
+          "padding": "None",
+          "separator": true
+        },
+        {
+          "type": "Container",
+          "id": "09b0ff2e-edd4-6cc7-b4c0-0bcf200137f6",
+          "padding": "None",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "id": "e8413541-62dc-6d30-3fc1-12a0a603f7b3",
+                  "padding": "None",
+                  "width": "auto",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "id": "2f67369f-bfbc-a0e4-db02-5759fce43f73",
+                      "text": "Original Message",
+                      "wrap": true,
+                      "weight": "Bolder",
+                      "color": "Good"
+                    }
+                  ]
+                }
+              ],
+              "padding": "None"
+            },
+            {
+              "type": "TextBlock",
+              "id": "OriginalMessageId",
+              "text": "${OriginalMessage}",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "id": "8d609af4-c79f-f9c8-0adb-69b42cf78df8",
+              "text": "Translation",
+              "wrap": true,
+              "color": "Good",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "id": "TranslationId",
+              "text": "${Translation}",
+              "wrap": true
+            }
+          ],
+          "separator": true
+        }
+      ]
+    }
+  ],
+  "padding": "None",
+  "@type": "AdaptiveCard",
+  "@context": "http://schema.org/extensions"
+}
